@@ -85,7 +85,7 @@ That's it. Initial configuration is completed.
 ### Start a node
 In order to start DXSpider node execute:
 ```
-docker run --restart unless-stopped --name dxspider -d -v ~/DXSpider/spider:/spider -p 7300:7300 dxenv
+docker run --restart unless-stopped --name dxspider -d -v `pwd`/spider:/spider -p 7300:7300 dxenv
 ```
 The above command will create a container named `dxspider` that uses previously created `dxenv` image. 
 In this example, `~/DXSpider/spider` is mounted inside the container as `/spider`, and port 7300 is redirected. 
