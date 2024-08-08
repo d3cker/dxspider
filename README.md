@@ -270,7 +270,7 @@ telnet dxcluster.sp6pws.pl 7300
 
 ### Crontab and startup for nodes
 
-Create an entry in `spider/script/crontab`: 
+Create an entry in `spider/local_cmd/crontab`: 
 ```
 0,15,30,45 * * * * start_connect('sp6pws-2') unless connected('sp6pws-2')
 ```
